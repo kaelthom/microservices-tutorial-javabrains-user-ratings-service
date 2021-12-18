@@ -24,9 +24,9 @@ public class MovieRatingController {
     @GetMapping("/user/{userId}")
     public UserRatingsResource getRatingsForUserId(@PathVariable(value="userId") int userId) {
         return new UserRatingsResource(userId, Arrays.asList(
-                new RatingResource(0, 4),
-                new RatingResource(1, 3),
-                new RatingResource(2, 5)
+                new RatingResource(100, 4),
+                new RatingResource(200, 3),
+                new RatingResource(300, 5)
         ));
     }
 }
